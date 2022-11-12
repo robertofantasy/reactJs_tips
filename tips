@@ -1,0 +1,3 @@
+1. in vscode we must have jsx extention over our files to suggestion works
+or instead we can use "import React from 'react';" in beggining of our files
+
