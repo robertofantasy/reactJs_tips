@@ -3,3 +3,5 @@ or instead we can use "import React from 'react';" in beggining of our files
 
 2. if there are nothing between jsx tags it could be self closed
 for example <Expanse> "There are nothing here"</Expanse> could be <Expanse />
+
+3. in case of composition we cant regulary use components as wrapper around another components(for more information go to "040 The Concept of _Composition_ (_children props_)" course) 
