@@ -1,3 +1,4 @@
+#Component tips
 1. in vscode we must have jsx extention over our files to suggestion works
 or instead we can use "import React from 'react';" in beggining of our files
 
@@ -5,3 +6,8 @@ or instead we can use "import React from 'react';" in beggining of our files
 for example <Expanse> "There are nothing here"</Expanse> could be <Expanse />
 
 3. in case of composition we cant regulary use components as wrapper around another components(for more information go to "040 The Concept of _Composition_ (_children props_)" course) 
+
+
+#State tips
+1. All events in jsx get function as input.
+for example: onClick={() => {console.log("Clicked!")}}
