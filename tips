@@ -11,3 +11,6 @@ for example <Expanse> "There are nothing here"</Expanse> could be <Expanse />
 #State tips
 1. All events in jsx get function as input.
 for example: onClick={() => {console.log("Clicked!")}}
+
+2.function calls that used in jsx tags(like click event), must not have "()", for example, click function must call just "click" not "click()"
+the reason is if we use click(), the fuction only call when its jsx tag read and not when click event triggered
