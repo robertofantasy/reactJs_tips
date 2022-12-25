@@ -14,3 +14,6 @@ for example: onClick={() => {console.log("Clicked!")}}
 
 2.function calls that used in jsx tags(like click event), must not have "()", for example, click function must call just "click" not "click()"
 the reason is if we use click(), the fuction only call when its jsx tag read and not when click event triggered
+
+3.useState function always return an array with exactly two element. The first element is current state of value and the second is the function for updating 
+the first value
