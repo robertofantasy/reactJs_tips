@@ -12,8 +12,11 @@ for example <Expanse> "There are nothing here"</Expanse> could be <Expanse />
 1. All events in jsx get function as input.
 for example: onClick={() => {console.log("Clicked!")}}
 
-2.function calls that used in jsx tags(like click event), must not have "()", for example, click function must call just "click" not "click()"
+2. the event handlers should be passed without the invocation operator (), the reason is because React uses event delegation. When an event such as a click or input change occurs, React will look at the event object to determine which component's event handler should be invoked. If you include the invocation operator when passing the function as a prop, it will invoke the function immediately, passing the return value of the function (which is likely undefined) to the event handler prop instead of the function itself.
+When React triggers the event, it will call the function passed as prop, but since you already invoked the function, nothing will happen. By passing the function without invoking it, you are passing a reference to the function to the component so that it can be invoked later when the event occurs. 
+
+3.function calls that used in jsx tags(like click event), must not have "()", for example, click function must call just "click" not "click()"
 the reason is if we use click(), the fuction only call when its jsx tag read and not when click event triggered
 
-3.useState function always return an array with exactly two element. The first element is current state of value and the second is the function for updating 
+4.useState function always return an array with exactly two element. The first element is current state of value and the second is the function for updating 
 the first value
